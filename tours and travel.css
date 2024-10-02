@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+#menu{
+    list-style-type: none;
+    display: flex;
+}
+#flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#menu i{
+    color: #514d59;
+}
+#menu a{
+    padding: 15px;
+}
+#menu li:last-child{
+    margin-left: 60px;
+}
+header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+body{
+    background-image: url(Group\ 73.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+}
+/*-------------------------------------------*/
+#booking_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 120px;
+}
+#booking{
+    padding:230px;
+}
+#booking_blur{
+      position: relative;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.6499999761581421);
+      box-shadow: 0px 0px 0px 0px rgba(81, 77, 89, 0.15000000596046448),
+        0px 12px 27px 0px rgba(81, 77, 89, 0.15000000596046448),
+        0px 49px 49px 0px rgba(81, 77, 89, 0.12999999523162842),
+        0px 110px 66px 0px rgba(81, 77, 89, 0.07999999821186066),
+        0px 195px 78px 0px rgba(81, 77, 89, 0.019999999552965164),
+        0px 304px 85px 0px rgba(81, 77, 89, 0);
+        border-radius: 0 20px 20px 20px;
+        background-size: auto;
+        width: 750px;
+}
+#booking #form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    width: auto;
+}
+#booking_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#booking_form i{
+    margin-right: 10px;
+}
+/*------------------------------------------*/
+.intro{
+    background-color:white;
+}
+.intro h2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom:30px;
+    color: #514D59;
+    padding: 50px;
+}
+.intro #info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro #infologo{
+    text-align: center;
+    color: #514D59;
+}
+.intro #infologo img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.intro #infologo h4{
+    margin-bottom: 10px;
+    font-size:20px;
+}
+.intro p{
+    font-size:15px;
+    margin-bottom: 50px;
+}
+/*tablet*/
+@media (min-width:786px) and (max-width:1199px){
+    .intro #info{
+        flex-wrap: wrap;
+    }
+    .intro #infologo{
+        width: 50%;
+    }
+}
+/*mobile*/
+@media (max-width: 767px){
+    .intro #info{
+        flex-wrap: wrap;
+    }
+    .intro #infologo{
+        width: 100%;
+    }
+}
+/*--------------------------------------------*/
+.about{
+    background-color: #FAFAFA;
+}
+.about #house{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.about img{
+    width: 300px;
+    height: 300px;
+    margin-left: 80px;
+}
+.about #oldbuilding{
+    color:#514D59;
+    margin-left: 60px;
+}
+.about #oldbuilding h3{
+    font-size:40px;
+}
+.about #oldbuilding p{
+    margin-top: 20px;
+    margin-bottom:25px;
+}
+.about #oldbuilding a{
+    text-decoration: none;
+}
+.about #oldbuilding a i{
+    margin-left:5px;
+}
+@media (min-width:786px) and (max-width:1199px){
+    .about #house{
+        flex-wrap: wrap;
+    }
+    .about #oldbuilding{
+        width: 50%;
+    }
+}
+@media (max-width:786px){
+    .about #house{
+        flex-wrap: wrap;
+    }
+    .about #oldbuilding{
+        width: 50%;
+    }
+}
+/*---------------------------------------*/
+.parallax{
+    background-color:#FAFAFA;
+}
+.parallax #tower{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.parallax #newbuilding h3{
+    font-size:40px;
+}
+.parallax img{
+    width: 300px;
+    height: 300px;
+    margin-left: 60px;
+}
+.parallax #newbuilding{
+    color: #514D59;
+    margin-left: 80px;
+}
+.parallax #newbuilding p{
+    margin-top: 20px;
+    margin-bottom:25px;
+}
+.parallax #newbuilding a{
+    text-decoration: none;
+}
+
+.parallax #newbuilding a i{
+    margin-left:5px;
+}
+@media (min-width:786px) and (max-width:1199px){
+    .parallax #tower{
+        flex-wrap: wrap;
+    }
+    .parallax #newbuilding{
+        width: 50%;
+    }
+}
+@media (max-width:786px){
+    .parallax #tower{
+        flex-wrap: wrap;
+    }
+    .parallax #newbuilding{
+        width: 100%;
+    }
+}
+/*-----------------------------------*/
+.conclusion{
+    background-color: #FFFFFF;
+    background-image:url(leftright.png);
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+.conclusion #leftright{
+     text-align: center;
+     color: #514D59;
+     padding: 80px;
+}
+.conclusion #leftright h4{
+    margin-bottom: 20px;
+}
+.conclusion #leftright h3{
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.conclusion #leftright p{
+    text-align: end;
+    margin-right: 150px;
+}
+/*-------------------------------------*/
+.fotter{
+    background-color: #333333;
+}
+.fotter .lastone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    color: white;
+}
+.fotter .lastone #first a img{
+    width: 100px;
+    height: 25px;
+    color: white;
+}
+.fotter .lastone #first p{
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.fotter .lastone #similar h4{
+     font-size: 20px;
+     margin-bottom: 10px;
+}
+.fotter .lastone #similar ul li{
+    list-style-type:none;
+    font-size:15px;
+}
+.fotter #first a i{
+     color:white;
+}
+.fotter .lastone #first a i:first-child{
+    margin-right: 10px;
+}
+.fotter .lastone #first a i:last-child{
+    margin-left:10px;
+}
+@media (min-width:786px) and (max-width:1199px){
+    .fotter .lastone{
+        flex-wrap: wrap;
+    }
+    .fotter #similar{
+        width: 50%;
+    }
+}
+@media (max-width:786px){
+    .fotter .lastone{
+        flex-wrap: wrap;
+    }
+    .fotter #similar{
+        width: 100%;
+    }
+}
+/*-----------------------------------------------*/
+.end #fotter2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: #514D59;
+}
+.end #fotter2 #a1{
+      margin-right: 400px;
+}
+@media (min-width:786px) and (max-width:1199px){
+    .end  #fotter2{
+        flex-wrap: wrap;
+        width: 50%;
+    }
+}
+@media (max-width:786px){
+    .end #fotter2{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+/*------------------------------------------------*/
